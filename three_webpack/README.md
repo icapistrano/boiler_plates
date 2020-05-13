@@ -5,15 +5,18 @@ I used webpack specifically to be able to use OrbitControls from three which is 
 Getting Started
 
 1.  With node installed in your system, run commands:
-    - npm intall three --save
-    - npm install webpack webpack-cli --save-dev
+    - npm install three --save
+    - npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev
     
-2.  Create webpack.config.json to target input and output file
+2.  Create webpack.config.json for webpack-related configurations
 
 3.  Configure package.json and add:
-    - "build": "webpack --config webpack.config.js"
+    - "build": "webpack"
+    - "start": "webpack-dev-server --open" 
 
 4.  Run command:
-    - npm run build
+    - npm run start
 
-5.  In your index.html, source output file
+**webpack-dev-server creates a server for development only -> for hot-reloading in my case..**
+**html-webpack-plugin generates its own html, look into webpack documentation for loading own html files**
+**index.html is not used**
