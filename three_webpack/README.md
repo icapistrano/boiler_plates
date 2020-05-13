@@ -17,6 +17,14 @@ Getting Started
 4.  Run command:
     - npm run start
 
-**webpack-dev-server creates a server for development only -> for hot-reloading in my case..**
-**html-webpack-plugin generates its own html, look into webpack documentation for loading own html files**
-**index.html is not used**
+**
+- webpack-dev-server creates a server for development only -> for hot-reloading in my case..
+- html-webpack-plugin generates its own html, look into webpack documentation for loading own html files
+- index.html is not used
+**
+
+**Sources:**
+- https://webpack.js.org/guides/getting-started/
+- https://webpack.js.org/concepts/loaders/
+- https://webpack.js.org/guides/development/
+- https://webpack.js.org/guides/hot-module-replacement/
